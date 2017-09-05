@@ -1,0 +1,14 @@
+GetUnreadTextMessageIntent get unread message
+GetUnreadTextMessageIntent get text message
+ReadTextMessageIntent next
+ReadTextMessageIntent next message
+ReplyTextMessageIntent reply
+ReplyTextMessageIntent reply message
+DoneIntent I'm done
+DoneIntent I am done
+TextMessageIntent message body {short message|MessageBody}
+TextMessageIntent message body {this is for a long text message|MessageBody}
+UnexpectedIntent whatever is not supposed to be captured by the expected intents
+UnexpectedIntent nonsense commands and sentences
+UnexpectedIntent any word
+UnexpectedIntent anything

@@ -1,0 +1,37 @@
+{
+  "intents": [
+    {
+      "intent": "GetUnreadTextMessageIntent"
+    },
+    {
+      "intent": "UnexpectedIntent"
+    },
+    {
+      "intent": "ReadTextMessageIntent"
+    },
+    {
+      "intent": "ReplyTextMessageIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "MessageBody",
+          "type": "AMAZON.LITERAL"
+        }
+      ],
+      "intent": "TextMessageIntent"
+    },
+    {
+      "intent": "DoneIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.YesIntent"
+    },
+    {
+      "intent": "AMAZON.NoIntent"
+    }
+  ]
+}
