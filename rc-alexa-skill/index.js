@@ -98,7 +98,8 @@ var handlers = {
             var jsonObj =response.json();
             var count = jsonObj.records.length
             if (count > 0){
-                for (var record of jsonObj.records) {
+                for (var i=count-1; i>=0; i--) {
+                    var record = jsonObj.records[i]
                     var message = {}
                     message['id'] = record.id
                     if ("name" in record.from){
@@ -196,7 +197,6 @@ var handlers = {
             this.attributes['message'] = message
             speech_output = "I repeat your message. " + message + ". Do you want to send it now?"
             reprompt_text = "Say yes to send the message or say no to cancel."
-            //this.handler.state = states.WAIT_CONFIRM
             this.emit(':ask', speech_output, reprompt_text);
         }else{
             speech_output = "Message is empty. Please try again."
