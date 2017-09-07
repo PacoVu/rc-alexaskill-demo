@@ -13,7 +13,7 @@ server.listen(port);
 
 app.get('/', function(req, res) {
   var rcsdk = new RC({
-    server: RC.server.sandbox,
+    server: process.env.RC_APP_SERVER_URL,
     appKey: req.query.client_id,
     appSecret: process.env.RC_APP_SECRET
   });

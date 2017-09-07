@@ -1,2 +1,3 @@
+RC_APP_SERVER_URL=https://platform.devtest.ringcentral.com
 RC_APP_SECRET=Your-RC-AppSecret
 MY_APP_PORT=5000

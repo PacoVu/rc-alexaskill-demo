@@ -6,7 +6,7 @@ var unitsThMap = [ "first","second","third","fourth","fifth","sixth","seventh","
 var tensThMap = [ "tenth", "twentieth", "thirtieth", "fortieth", "fiftieth", "sixtieth", "seventieth", "eightieth", "ninetieth" ]
 
 var rcsdk = new RC({
-    server: RC.server.sandbox,
+    server: process.env.RC_APP_SERVER_URL,
     appKey: process.env.RC_APP_KEY,
     appSecret: process.env.RC_APP_SECRET
 });
